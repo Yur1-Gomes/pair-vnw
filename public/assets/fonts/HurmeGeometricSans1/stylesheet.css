@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Hurme Geometric Sans 1';
+    src: url('HurmeGeometricSans1-Bold.eot');
+    src: local('HurmeGeometricSans1 Bold'), local('HurmeGeometricSans1-Bold'),
+        url('HurmeGeometricSans1-Bold.eot?#iefix') format('embedded-opentype'),
+        url('HurmeGeometricSans1-Bold.woff2') format('woff2'),
+        url('HurmeGeometricSans1-Bold.woff') format('woff'),
+        url('HurmeGeometricSans1-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans 1';
+    src: url('HurmeGeometricSans1-Regular.eot');
+    src: local('HurmeGeometricSans1 Regular'), local('HurmeGeometricSans1-Regular'),
+        url('HurmeGeometricSans1-Regular.eot?#iefix') format('embedded-opentype'),
+        url('HurmeGeometricSans1-Regular.woff2') format('woff2'),
+        url('HurmeGeometricSans1-Regular.woff') format('woff'),
+        url('HurmeGeometricSans1-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans 1';
+    src: url('HurmeGeometricSans1-SemiBold.eot');
+    src: local('HurmeGeometricSans1 SemiBold'), local('HurmeGeometricSans1-SemiBold'),
+        url('HurmeGeometricSans1-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('HurmeGeometricSans1-SemiBold.woff2') format('woff2'),
+        url('HurmeGeometricSans1-SemiBold.woff') format('woff'),
+        url('HurmeGeometricSans1-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans 1';
+    src: url('HurmeGeometricSans1-Light.eot');
+    src: local('HurmeGeometricSans1 Light'), local('HurmeGeometricSans1-Light'),
+        url('HurmeGeometricSans1-Light.eot?#iefix') format('embedded-opentype'),
+        url('HurmeGeometricSans1-Light.woff2') format('woff2'),
+        url('HurmeGeometricSans1-Light.woff') format('woff'),
+        url('HurmeGeometricSans1-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
