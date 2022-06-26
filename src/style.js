@@ -8,6 +8,6 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       box-sizing: border-box;
       font-family: 'Hurme Geometric Sans 1';
+      list-style: none;
    }
-
 `
