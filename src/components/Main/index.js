@@ -1,19 +1,18 @@
-import { Container } from '../index'
+// import { Theme } from '../../assets'
+
+import { LastetRecipes } from './LastetRecipes'
+import { AboutSection } from './AboutSection'
 
 import {
-   Content,
-   Title
+   Container,
 } from './style'
 
-import { Theme } from '../../assets'
-
 export function Main() {
+
    return (
       <Container>
-         <Content>
-            <Title>Main</Title>
-            <img src={Theme.images.cakeP} alt='Imagem de um bolo' />
-         </Content>
+         <LastetRecipes />
+         <AboutSection />
       </Container>
    )
 }

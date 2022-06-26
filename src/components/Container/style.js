@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Theme } from '../../assets'
+// import { Theme } from '../../assets'
 
 /** example */
 export const Box = styled.div`
@@ -8,5 +8,4 @@ export const Box = styled.div`
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   background-color: ${Theme.colors.complementary};
 `

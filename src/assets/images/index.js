@@ -5,6 +5,7 @@ import cakeG from './piece-of-cake.png'
 import cakeP from './piece-of-cake2.png'
 import margherita from './pizza-margherita.png'
 import spoon from './spoon.png'
+import logo from './logo.png'
 
 export const images = {
    kitchenG,
@@ -13,5 +14,6 @@ export const images = {
    cakeG,
    cakeP,
    margherita,
-   spoon
+   spoon,
+   logo
 }
