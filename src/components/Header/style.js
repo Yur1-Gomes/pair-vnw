@@ -1,44 +1,75 @@
 import styled from 'styled-components'
 import { Theme } from '../../assets'
 
+
+export const Container = styled.div`
+   padding: 20px;
+`
+
 export const Content = styled.div`
-   display: flex;
-   flex-direction: column;
    width: 100%;
-   height: 400px;
+   height: 1303px;
    background-image: url(${Theme.images.kitchenP});
+   background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 85.88rem;
-   margin: 2.25rem;
+   padding: 45px 54px 0px 63px;
 `
-export const Logo = styled.img`
-   height: 3.8rem;
-`
+
 export const Nav = styled.nav`
+   width: 100%;
+   height: 81px;
    display: flex;
-   margin-top: 4.4rem;
-   margin-left: 3.94rem;
+   justify-content: space-between;
+
+   @media (max-width: 1000px) {
+      display: none;
+   }
 `
-export const Ul = styled.ul`
+
+export const Logo = styled.img`
+   width: 68px;
+   height: 61px;
+`
+
+export const List = styled.ul`
    display: flex;
    align-items: center;
-   margin-left: 57rem;
 `
-export const Li = styled.li`
-   margin-left: 5.5rem;
-   font-size: 1.5rem;
-   list-style: none;
+
+export const ListItem = styled.li`
+   width: fit-content;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 10px;
+   text-transform: uppercase;
+   font-size: 24px;
+   padding: 0 40px;
 `
+
 export const Button = styled.button`
-   height: 5.05rem;
-   width: 16.4rem;
-   margin-left: 5.5rem;
-   border: solid black 5px;
-   background-color: #d8d2d6;
-   font-size: 1.5rem;
+   width: 263px;
+   height: 100%;
+   background-color: transparent;
+   text-transform: uppercase;
+   font-size: 24px;
+   border: 5px solid ${Theme.colors.darkGray};
 `
+
+
+export const TitleContent = styled.div`
+   display: flex;
+   height: calc(100% - 81px);
+   justify-content: center;
+   align-items: center;
+`
+
 export const Title = styled.h2`
-   font-size: 9.37rem;
-   margin: 35rem 0 0 38rem;
+   font-size:150px;
+      
+   @media (max-width: 1000px) {
+      font-size: min(100px, 15vw);
+   }
 `

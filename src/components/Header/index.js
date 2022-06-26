@@ -1,13 +1,13 @@
-import { Container } from '../index'
-
 import {
+   Container,
    Content,
-   Title,
    Logo,
    Nav,
-   Ul,
-   Li,
-   Button
+   List,
+   ListItem,
+   Button,
+   TitleContent,
+   Title,
 } from './style'
 
 import { Theme } from '../../assets'
@@ -17,14 +17,16 @@ export function Header() {
       <Container>
          <Content>
             <Nav>
-               <Logo src={Theme.icons.logo} alt='Logo' />
-               <Ul>
-                  <Li>ABOUT</Li>
-                  <Li>RECIPES</Li>
-                  <Button>SUBSCRIBE</Button>
-               </Ul>
+               <Logo src={Theme.images.logo} alt='Logo' />
+               <List>
+                  <ListItem>About</ListItem>
+                  <ListItem>Recipes</ListItem>
+                  <ListItem><Button>Subscribe</Button></ListItem>
+               </List>
             </Nav>
+            <TitleContent>
                <Title>RECIPES</Title>
+            </TitleContent>
          </Content>
       </Container>
    )
