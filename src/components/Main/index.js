@@ -1,4 +1,4 @@
-import { Theme } from '../../assets'
+// import { Theme } from '../../assets'
 
 import { LastetRecipes } from './LastetRecipes'
 import { AboutSection } from './AboutSection'

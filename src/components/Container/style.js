@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Theme } from '../../assets'
+// import { Theme } from '../../assets'
 
 /** example */
 export const Box = styled.div`
