@@ -6,6 +6,10 @@ export const Container = styled.div`
    /* height: 100vh; */
    background-color: ${Theme.colors.grayLight};
    padding: 245px 100px 0 100px;
+
+   @media (max-width: 768px  ) {
+      padding: 245px 16px 20px 16px;
+   }
 `
 
 export const Content = styled.div`
@@ -26,12 +30,23 @@ export const Title = styled.h2`
    flex-direction: column;
    align-items: center;
    margin-bottom: 100px;
+   font-weight: 600;
+   color: ${Theme.colors.darkGray};
 
    ::after {
       content: '';
       width: 104px;
-      border-bottom: 5px solid ${Theme.colors.darkGray};
-      margin-top: 15px;
+      border-bottom: 7px solid ${Theme.colors.darkGray};
+      margin-top: 25px;
+   }
+
+   @media (max-width: 768px  ) {
+      font-size: max(50px, 10vw);
+
+      ::after {
+         width: max(50px, 30vw);
+         border-bottom: 10px solid ${Theme.colors.darkGray};
+      }
    }
 `
 
@@ -40,9 +55,13 @@ export const ContentCards = styled.div`
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   gap: 50px;
 
-   @media (max-width: 1870px) {
+   @media (max-width: 1907px) {
       justify-content: center;
-      gap: 50px;
+   }
+
+   @media (max-width: 768px  ) {
+      gap: 15px;
    }
 `

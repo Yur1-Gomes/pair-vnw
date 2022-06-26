@@ -1,41 +1,40 @@
-import { Container } from '../index';
 import { Theme } from '../../assets'
 
 import {
+   Container,
    Content,
-   BottomBox,
    Social,
-   Media,
-   BottomList,
-   Li,
+   Icon,
+   List,
+   ListItem,
    Disclaimer
 } from './style'
 
 export function Footer() {
+   const icons = [
+      { src: Theme.icons.social.instagram, alt: 'Instagram icon' },
+      { src: Theme.icons.social.twitter, alt: 'Twitter icon' },
+      { src: Theme.icons.social.facebook, alt: 'Facebook icon' },
+      { src: Theme.icons.social.pinterest, alt: 'Pinterest icon' },
+   ]
+
+   const disclaimer = `Layout produzido por Vai na Web para fins exclusivamente educacionais. Referência: https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k/`
+
+   const list = ['About', 'Recipes', 'Subscribe']
+
    return (
       <Container>
          <Content>
-           <BottomBox>
             <Social>
-               <Media src={Theme.icons.social.instagram} alt=""/>
-               <Media src={Theme.icons.social.twitter} alt=""/>
-               <Media src={Theme.icons.social.facebook} alt=""/>
-               <Media src={Theme.icons.social.pinterest} alt=""/>
+               {icons.map((icon) => <Icon src={icon.src} alt={icon.alt} />)}
             </Social>
-            <BottomList>
-               <Li>ABOUT</Li>
-               <Li>RECIPES</Li>
-               <Li>SUBSCRIBE</Li>
-            </BottomList>
-           </BottomBox> 
-           <Disclaimer>
-            <p>
-              Layout produzido por Vai na Web para fins exclusivamente
-              educacionais. Referência:
-              https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k/
-            </p>
-          </Disclaimer>
+            <List>
+               {list.map((item) => <ListItem>{item}</ListItem>)}
+            </List>
          </Content>
+         <Disclaimer>
+            <p>{disclaimer}</p>
+         </Disclaimer>
       </Container>
    )
 }

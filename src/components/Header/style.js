@@ -21,6 +21,10 @@ export const Nav = styled.nav`
    height: 81px;
    display: flex;
    justify-content: space-between;
+
+   @media (max-width: 1000px) {
+      display: none;
+   }
 `
 
 export const Logo = styled.img`
@@ -63,5 +67,9 @@ export const TitleContent = styled.div`
 `
 
 export const Title = styled.h2`
-   font-size: 150px;
+   font-size:150px;
+      
+   @media (max-width: 1000px) {
+      font-size: min(100px, 15vw);
+   }
 `

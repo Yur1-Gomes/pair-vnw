@@ -3,6 +3,10 @@ import { Theme } from '../../assets'
 
 export const Content = styled.div`
    width: 536px;
+
+   @media (max-width: 768px  ) {
+      width: 100%
+   }
 `
 
 export const Image = styled.div`
@@ -12,6 +16,10 @@ export const Image = styled.div`
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+
+   @media (max-width: 768px  ) {
+      height: max(278px, 60vw);
+   }
 `
 
 export const Description = styled.div`
@@ -22,20 +30,35 @@ export const Description = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+
+   @media (max-width: 768px  ) {
+      height: max(280px, 60vw);
+   }
 `
 
 export const Title = styled.h2`
    width: 100%;
    height: fit-content;
-   font-size: 32px;
+   font-size: min(32px, 8vw);
    display: flex;
    flex-direction: column-reverse;
    align-items: center;
-   
+   color: ${Theme.colors.darkGray};
+   font-weight: 400;
+
    ::after {
       content: '';
-      width: 104px;
-      border-bottom: 5px solid ${Theme.colors.darkGray};
-      margin-bottom: 20px;
+      width: 50px;
+      border-bottom: 7px solid ${Theme.colors.darkGray};
+      margin-bottom: 30px;
+   }
+
+   @media (max-width: 768px  ) {
+      font-size: max(32px, 8vw);
+
+      ::after {
+         width: max(50px, 8vw);
+         border-bottom: 10px solid ${Theme.colors.darkGray};
+      }
    }
 `
